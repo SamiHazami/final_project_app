@@ -17,9 +17,9 @@
   background-color: #8ea3a5;
   min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  /*flex-direction: column;*/
+  /*align-items: center;*/
+  /*justify-content: center;*/
   font-size: calc(10px + 2vmin);
   color: white;
 }
@@ -36,3 +36,6 @@
     transform: rotate(360deg);
   }
 }
+
+
+
