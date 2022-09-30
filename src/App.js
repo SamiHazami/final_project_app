@@ -5,11 +5,10 @@ import Home from "./components/Home";
 import About from "./components/About";
 import Contacts from "./components/Contacts";
 import News from "./components/News";
-import './data.js'
-//import'./components/style.css';
+import'./components/style.css';
 
 
-function App() {
+export default function App() {
   return (
     <div>  
        <Router>   
@@ -26,6 +25,6 @@ function App() {
        
     </div>
   );
-}
+};
 
-export default App;
+
