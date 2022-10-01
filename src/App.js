@@ -5,6 +5,7 @@ import Home from "./components/Home";
 import About from "./components/About";
 import Contacts from "./components/Contacts";
 import News from "./components/News";
+import Main1 from "./components/Aboutpage/Main1";
 import'./components/style.css';
 
 
