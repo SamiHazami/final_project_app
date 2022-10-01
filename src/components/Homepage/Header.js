@@ -1,6 +1,6 @@
 import React from 'react';
 //import './style.css';
-const Header =()=> {
+export default function Header(props){
   return (
     <header style={{display:'flex',justifyContent:'space-between',alignItems:'center',padding:"1rem",margin:"0.5rem",borderRadius:"0.5rem",backgroundColor:'#e0e0e0'}} >
       <div>
@@ -10,11 +10,15 @@ const Header =()=> {
       </div>
       <div>
         <a href="#/cart">
-          Cart
+        Cart{' '}
+          {props.countCartItems ? (
+            <button className="badge">{props.countCartItems}</button>
+          ) : (
+            ''
+          )}
            </a>       
             <a href="#/signin"> SignIn</a>
       </div>
     </header>
   );
-}
-export default Header ;
+};

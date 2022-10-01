@@ -37,7 +37,7 @@ export default function Home(){
     
       <div> 
         <div>
-          <Header></Header>
+          <Header countCartItems={cartItems.length}></Header>
         </div>
         <div style={{display:'flex',justifyContent:'space-between'}}>
           <Main products={products} onAdd={onAdd}></Main>
