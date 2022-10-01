@@ -45,7 +45,7 @@ export default function Basket(props) {
               </div>
             </div>
 
-            <div style={{display:'flex',justifyContent:'space-betweeen'}}>
+            <div style={{display:'flex',flexwrap:'wrap',justifyContent:'space-betweeen'}}>
               <div style={{flex:'2'}}>
                 <strong>Total Price</strong>
               </div>

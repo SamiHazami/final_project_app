@@ -22,7 +22,7 @@ const data = {
       price: 50,
       status : 'for sale',
     },
-        
+            
   ],
 };
   
