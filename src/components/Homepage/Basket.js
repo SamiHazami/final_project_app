@@ -8,9 +8,9 @@ export default function Basket(props) {
       <div>
       {cartItems.length === 0 && <div>Cart is empty</div>} 
       {cartItems.map((item) => (
-          <div key={item.id} className="row">
-            <div className="col-2">{item.description}</div>
-            <div className="col-2">
+          <div key={item.id} syle={{display:'flex',justifycontent:'space-between'}}>
+            <div style={{flex:'2'}}>{item.description}</div>
+            <div style={{flex:'2'}}>
               <button onClick={() => onRemove(item)} className="remove">
                 -
               </button>{' '}
@@ -18,8 +18,7 @@ export default function Basket(props) {
                 +
               </button>
             </div>
-
-            <div className="col-2 text-right">
+            <div style={{flex:'2',textAlign:'right'}}>
               {item.qty} x ${item.price.toFixed(2)}
             </div>
           </div>
